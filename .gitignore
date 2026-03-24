@@ -13,3 +13,10 @@ build/
 .DS_Store
 .env
 *.ipynb_checkpoints/
+
+# Internal documentation - keep locally only
+ANALISA_KODE.md
+APPENDIX_REPRODUCIBILITY.md
+CODE_REVIEW_REKOMENDASI.md
+DIAGRAM_VISUALISASI.md
+QUICK_REFERENCE.md
