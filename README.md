@@ -6,4 +6,4 @@ There are two parts to this project:
 1. Fine-tuning the base LLM model. In this project, I use the Gemma model for LLM, Low Rank Adaptation (LoRA) for the fine-tuning method, and Unsloth for the inference and fine-tuning library.
 2. Implementation with the robot. Simply put, the user will input natural language text which will then be sent to the LLM and will generate a Low Level JSON Action Plan. This JSON will be read and executed one by one.
 
-For more information, open the README in the [Finetuning](./finetuning) and [Implementation](./implementasi) folders.
+For more information, open the README in the [Finetuning](./finetuning) and [Implementation](./implementation) folders.
