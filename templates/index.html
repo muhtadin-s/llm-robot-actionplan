@@ -1,0 +1,167 @@
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Block Detection</title>
+            <style>/* ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.mx-16{margin-left:4rem;margin-right:4rem}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-36{margin-bottom:9rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-14{margin-top:3.5rem}.mt-4{margin-top:1rem}.flex{display:flex}.w-full{width:100%}.flex-col{flex-direction:column}.items-center{align-items:center}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-2{border-width:2px}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity))}.p-4{padding:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.text-center{text-align:center}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.tracking-tight{letter-spacing:-0.025em}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-slate-900\/10{--tw-ring-color:rgb(15 23 42 / 0.1)}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81 / var(--tw-bg-opacity))}@media (min-width: 1024px){.lg\:px-14{padding-left:3.5rem;padding-right:3.5rem}}@media (min-width: 1280px){.xl\:px-28{padding-left:7rem;padding-right:7rem}}</style>
+
+    </head>
+    
+    <body>
+        <div class="flex flex-col items-center my-10 mx-16">
+            <h1 class="text-5xl font-medium tracking-tight text-gray-900 text-center my-4">Interaksi Manusia-Robot Berbasis Large Language Model untuk Pembangkitan Action Plan pada Robot Lengan</h1>
+    
+            <img src="{{ url_for('video_feed') }}" alt="This is a detail image" class="rounded-lg bg-slate-200 ring-1 ring-slate-900/10 mt-14">
+    
+            <div class="mt-14 xl:px-28 mb-4 w-full lg:px-14 mb-36">
+                <h2 class="text-4xl font-medium mb-6">Hasil Deteksi Objek</h2>
+                <div class="bg-gray-200 p-4 rounded-md mb-4 json-receive text-xl object-coordinate">
+                    <ul id="detected-objects"></ul>
+                </div>
+            </div>
+    
+            <div class="mt-14 xl:px-28 mb-4 w-full lg:px-14">
+                <h2 class="text-4xl font-medium mb-6">Masukkan Perintah Kontrol Robot</h2>
+                <input type="text" id="control-command" placeholder="Misalkan : pindahkan balok merah ke depan" class="w-full px-4 py-4 border border-2 rounded-md mb-4 text-xl">
+                <button id="speech-to-text-button" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-4 rounded-md w-full text-xl font-bold mt-4" onclick="startSpeechRecognition()">Gunakan Suara</button>
+                <button class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-4 rounded-md w-full text-xl font-bold mt-4" onclick="sendPrompt()">Jalankan Inference</button>
+            </div>
+    
+            <div class="mt-14 xl:px-28 mb-4 w-full lg:px-14 mb-36">
+                <h2 class="text-4xl font-medium mb-6">Hasil Inference</h2>
+                <div class="bg-gray-200 p-4 rounded-md mb-4 text-xl json-receive" id="inference-result">Hasil inference akan ditampilkan di sini</div>
+                <button class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-4 rounded-md w-full text-xl font-bold mt-4 robot-run" onclick="runRobot()">Jalankan robot</button>
+                <div id="robot-result" class="text-xl mt-4"></div>
+            </div>
+        </div>
+    
+        <footer class="bg-gray-900">
+            <h1 class="py-10 text-xl text-white text-center">Atyaduta Putra Perkasa - 5024201077</h1>
+        </footer>
+    
+        <script>
+            async function fetchDetectedObjects() {
+                try {
+                    const response = await fetch('/detected_objects');
+                    const objects = await response.json();
+                    const list = document.getElementById('detected-objects');
+                    list.innerHTML = '';
+                    objects.forEach((obj, index) => {
+                        const li = document.createElement('li');
+                        li.textContent = `${index + 1}. Balok ${obj[0]} : (${obj[1][0]}, ${obj[1][1]}, -50)`;
+                        list.appendChild(li);
+                    });
+                } catch (error) {
+                    console.error('Error fetching detected objects:', error);
+                }
+            }
+    
+            async function sendPrompt() {
+                const listItems = Array.from(document.getElementById('detected-objects').getElementsByTagName('li'));
+                const objects = listItems.map(li => li.textContent.trim());
+                const detectedObjects = objects.join(', ');
+                const command = document.getElementById('control-command').value;
+    
+                const data = {
+                    object_context: detectedObjects,
+                    input_context: command
+                };
+    
+                try {
+                    const resultElement = document.getElementById('inference-result');
+                    resultElement.textContent = 'loading...';
+    
+                    const response = await fetch('/send_prompt', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(data)
+                    });
+    
+                    if (!response.ok) {
+                        throw new Error('Failed to send prompt');
+                    }
+    
+                    const result = await response.json();
+                    resultElement.textContent = JSON.stringify(result, null, 2);
+    
+                } catch (error) {
+                    console.error('Error sending prompt:', error);
+                }
+            }
+    
+            async function runRobot() {
+                try {
+                    const inferenceResult = JSON.parse(document.getElementById('inference-result').textContent);
+    
+                    const resultElement = document.getElementById('robot-result');
+                    resultElement.textContent = 'loading...';
+    
+                    const response = await fetch('/run-robot', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(inferenceResult)
+                    });
+    
+                    if (!response.ok) {
+                        throw new Error('Failed to run robot');
+                    }
+    
+                    const result = await response.json();
+                    resultElement.textContent = JSON.stringify(result, null, 2);
+    
+                } catch (error) {
+                    console.error('Error running robot:', error);
+                }
+            }
+    
+            function startSpeechRecognition() {
+                const button = document.getElementById('speech-to-text-button');
+                button.textContent = 'Mendengarkan...';
+                button.classList.add('listening');
+    
+                if (!('webkitSpeechRecognition' in window)) {
+                    alert('Webkit Speech Recognition tidak didukung oleh browser ini.');
+                    button.textContent = 'Gunakan Suara';
+                    button.classList.remove('listening');
+                    return;
+                }
+    
+                const recognition = new webkitSpeechRecognition();
+                recognition.lang = 'id-ID';
+                recognition.interimResults = false;
+                recognition.maxAlternatives = 1;
+    
+                recognition.onresult = function (event) {
+                    const transcript = event.results[0][0].transcript;
+                    document.getElementById('control-command').value = transcript;
+                    button.textContent = 'Gunakan Suara';
+                    button.classList.remove('listening');
+                };
+    
+                recognition.onerror = function (event) {
+                    console.error('Speech Recognition Error:', event.error);
+                    alert('Terjadi kesalahan saat mendengarkan: ' + event.error);
+                    button.textContent = 'Gunakan Suara';
+                    button.classList.remove('listening');
+                };
+    
+                recognition.onend = function () {
+                    button.textContent = 'Gunakan Suara';
+                    button.classList.remove('listening');
+                };
+    
+                recognition.start();
+            }
+    
+            setInterval(fetchDetectedObjects, 1000);
+        </script>
+    </body>
+    
+    </html>

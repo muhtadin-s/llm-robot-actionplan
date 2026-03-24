@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>/* ! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.right-0{right:0px}.top-0{top:0px}.z-10{z-index:10}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.me-1{margin-inline-end:0.25rem}.me-2{margin-inline-end:0.5rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-4{margin-top:1rem}.flex{display:flex}.hidden{display:none}.h-10{height:2.5rem}.h-2{height:0.5rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-full{width:100%}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.break-words{overflow-wrap:break-word}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity))}.bg-gray-400{--tw-bg-opacity:1;background-color:rgb(156 163 175 / var(--tw-bg-opacity))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity))}.bg-gray-500{--tw-bg-opacity:1;background-color:rgb(107 114 128 / var(--tw-bg-opacity))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-\[url\(\'https\:\/\/play\.tailwindcss\.com\/img\/grid\.svg\'\)\]{background-image:url('https://play.tailwindcss.com/img/grid.svg')}.bg-center{background-position:center}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-4{padding-bottom:1rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.tracking-tight{letter-spacing:-0.025em}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.text-zinc-950{--tw-text-opacity:1;color:rgb(9 9 11 / var(--tw-text-opacity))}.ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-slate-900\/10{--tw-ring-color:rgb(15 23 42 / 0.1)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.\[mask-image\:linear-gradient\(180deg\2c white\2c rgba\(255\2c 255\2c 255\2c 0\)\)\]{-webkit-mask-image:linear-gradient(180deg,white,rgba(255,255,255,0));mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity))}.hover\:opacity-70:hover{opacity:0.7}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity))}.focus-visible\:outline-none:focus-visible{outline:2px solid transparent;outline-offset:2px}.focus-visible\:outline-black:focus-visible{outline-color:#000}.disabled\:bg-\[\#D7D7D7\]:disabled{--tw-bg-opacity:1;background-color:rgb(215 215 215 / var(--tw-bg-opacity))}.disabled\:text-\[\#f4f4f4\]:disabled{--tw-text-opacity:1;color:rgb(244 244 244 / var(--tw-text-opacity))}.disabled\:hover\:opacity-100:hover:disabled{opacity:1}@media (min-width: 640px){.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}}@media (min-width: 768px){.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width: 1024px){.lg\:w-1\/2{width:50%}.lg\:flex-row{flex-direction:row}.lg\:p-16{padding:4rem}.lg\:pr-16{padding-right:4rem}.lg\:text-5xl{font-size:3rem;line-height:1}}</style>
+<body>
+    <!-- Background Section -->
+    <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+  
+    <div class="absolute inset-0 bg-[url('https://play.tailwindcss.com/img/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+  
+    <h1 class="text-2xl md:text-3xl lg:text-5xl font-medium tracking-tight text-gray-900 text-center px-8 pb-4">Interaksi Manusia-Robot Berbasis Large Language Model untuk Pembangkitan Action Plan pada Robot Lengan</h1>
+
+      <!-- Your Content -->
+      <div class="flex flex-col lg:flex-row relative z-10">
+        <div class="first w-full lg:w-1/2 flex justify-center items-center p-8 lg:p-16">
+          <img src="{{ url_for('video_feed') }}" alt="This is a detail image" class="rounded-lg bg-slate-200 ring-1 ring-slate-900/10">
+        </div>
+                <div class="second w-full p-6 lg:w-1/2 flex flex-col justify-center lg:pr-16">
+  
+              <div>
+                  <h1 class="text-2xl font-semibold text-zinc-950 sm:text-2xl mb-4">Hasil Deteksi Objek</h1>
+                  <div class="bg-white w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 break-words mb-4">
+                    <ul id="detected-objects"></ul>
+                  </div>
+              </div>
+  
+              <div>
+                <h1 class="text-2xl font-semibold text-zinc-950 sm:text-2xl mb-4 mt-4">Masukkan Input</h1>
+                <div class="relative w-full mb-4">
+                    <input type="text" id="control-command" class="text-lg w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Masukkan Perintah NL">
+                    <div class="absolute top-0 right-0 flex items-center mt-1 mr-2">
+                        <button id="speech-to-text-button" class="text-gray-500 mb-1 me-1 flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:opacity-70 focus-visible:outline-none focus-visible:outline-black disabled:text-[#f4f4f4] disabled:hover:opacity-100 disabled:bg-[#D7D7D7]">
+                            <svg width="13" height="24" viewBox="0 0 384 512" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-lg"><path fill-rule="evenodd" clip-rule="evenodd" d="M192 0C139 0 96 43 96 96l0 160c0 53 43 96 96 96s96-43 96-96l0-160c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40z" fill="currentColor"></path></svg>
+                        </button>
+                        <button class="text-gray-500 mb-1 flex h-10 w-10 items-center justify-center rounded-full bg-black text-white transition-colors hover:opacity-70 focus-visible:outline-none focus-visible:outline-black disabled:text-[#f4f4f4] disabled:hover:opacity-100 disabled:bg-[#D7D7D7]">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-2xl" onclick="sendPrompt()"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.1918 8.90615C15.6381 8.45983 16.3618 8.45983 16.8081 8.90615L21.9509 14.049C22.3972 14.4953 22.3972 15.2189 21.9509 15.6652C21.5046 16.1116 20.781 16.1116 20.3347 15.6652L17.1428 12.4734V22.2857C17.1428 22.9169 16.6311 23.4286 15.9999 23.4286C15.3688 23.4286 14.8571 22.9169 14.8571 22.2857V12.4734L11.6652 15.6652C11.2189 16.1116 10.4953 16.1116 10.049 15.6652C9.60265 15.2189 9.60265 14.4953 10.049 14.049L15.1918 8.90615Z" fill="currentColor"></path></svg>
+                        </button>
+                    </div>
+                </div>
+              </div>
+  
+              <div>
+                  <h1 class="text-2xl font-semibold text-zinc-950 sm:text-2xl mb-4 mt-4">Hasil Inferrence</h1>
+                  <div class="bg-white w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 break-words mb-4">
+
+                    <div class="flex items-center space-x-2 text-gray-600">
+                        
+                      <div class="text-lg" id="inference-result"></div>
+
+                      <div id="loading-bar" class="hidden">
+                        <span class="text-lg">Memproses</span>
+                        <!-- Dots -->
+                        <div class="flex space-x-1 loading-bar">
+                          <div class="h-2 w-2 bg-gray-500 rounded-full animate-pulse"></div>
+                          <div class="h-2 w-2 bg-gray-400 rounded-full animate-pulse"></div>
+                          <div class="h-2 w-2 bg-gray-300 rounded-full animate-pulse"></div>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    
+                  </div>
+                  <div class="w-full flex justify-end">
+                      <button type="button" class="text-white bg-gray-800 hover:bg-gray-600 font-medium rounded-md text-lg px-5 py-2.5 me-2 mb-2" onclick="runRobot()">Jalankan</button>
+
+                  </div>
+
+                  <div id="robot-result" class="text-xl mt-4"></div>
+
+              </div>
+              
+          </div>
+      </div>
+    </div>
+
+    <script>
+      async function fetchDetectedObjects() {
+          try {
+              const response = await fetch('/detected_objects');
+              const objects = await response.json();
+              const list = document.getElementById('detected-objects');
+              list.innerHTML = '';
+              objects.forEach((obj, index) => {
+                  const li = document.createElement('li');
+                  li.textContent = `${index + 1}. Balok ${obj[0]} : (${obj[1][0]}, ${obj[1][1]}, -50)`;
+                  list.appendChild(li);
+              });
+          } catch (error) {
+              console.error('Error fetching detected objects:', error);
+          }
+      }
+
+      async function sendPrompt() {
+          // Get the detected objects list as text content
+          const listItems = Array.from(document.getElementById('detected-objects').getElementsByTagName('li'));
+          const objects = listItems.map(li => li.textContent.trim());
+          
+          // Join the objects with commas
+          const detectedObjects = objects.join(', ');
+
+          // Get the command from the input field
+          const command = document.getElementById('control-command').value;
+          
+          // Prepare data to send
+          const data = {
+              object_context: detectedObjects,
+              input_context: command
+          };
+
+          try {
+              const loadingBar = document.getElementById('loading-bar');
+              const resultElement = document.getElementById('inference-result');
+
+              loadingBar.classList.remove('hidden');
+
+              // Send POST request to /send_prompt endpoint
+              const response = await fetch('/send_prompt', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(data)
+              });
+
+              if (!response.ok) {
+                  throw new Error('Failed to send prompt');
+              }
+
+              // Handle response if needed
+              const result = await response.json();
+              resultElement.textContent = JSON.stringify(result, null, 2);
+              loadingBar.classList.remove('hidden');
+
+
+          } catch (error) {
+              console.error('Error sending prompt:', error);
+              // Optionally handle error display or logging here
+          }
+      }
+
+      async function runRobot() {
+      try {
+          // Get the inference result
+          const inferenceResult = JSON.parse(document.getElementById('inference-result').textContent);
+
+          const resultElement = document.getElementById('robot-result');
+          resultElement.textContent = 'loading...';
+
+          // Send POST request to /run-robot endpoint with inference result
+          const response = await fetch('/run-robot', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(inferenceResult)
+          });
+
+          if (!response.ok) {
+              throw new Error('Failed to run robot');
+          }
+
+          // Handle response if needed
+          const result = await response.json();
+          resultElement.textContent = JSON.stringify(result, null, 2);
+
+      } catch (error) {
+          console.error('Error running robot:', error);
+          // Optionally handle error display or logging here
+      }
+  }
+
+  function startSpeechRecognition() {
+                const button = document.getElementById('speech-to-text-button');
+                button.classList.remove('bg-black');
+		button.classList.add('bg-red-500');
+    
+                if (!('webkitSpeechRecognition' in window)) {
+                    alert('Webkit Speech Recognition tidak didukung oleh browser ini. Gunakan Browser Chrome');
+                    return;
+                }
+    
+                const recognition = new webkitSpeechRecognition();
+                recognition.lang = 'id-ID';
+                recognition.interimResults = false;
+                recognition.maxAlternatives = 1;
+    
+                recognition.onresult = function (event) {
+                    const transcript = event.results[0][0].transcript;
+                    document.getElementById('control-command').value = transcript;
+                    button.classList.remove('bg-red-500');
+		    button.classList.add('bg-black');
+                };
+    
+                recognition.onerror = function (event) {
+                    console.error('Speech Recognition Error:', event.error);
+                    alert('Terjadi kesalahan saat mendengarkan: ' + event.error);
+                    button.classList.remove('bg-red-500');
+		    button.classList.add('bg-black');
+                };
+    
+                recognition.onend = function () {
+                    button.textContent = 'Gunakan Suara';
+                    button.classList.remove('bg-red-500');
+		            button.classList.add('bg-black');
+                };
+    
+                recognition.start();
+            }
+
+      setInterval(fetchDetectedObjects, 1000); // Fetch detected objects every second
+  </script>
+
+
+  </body>
+  
+
+</html>
